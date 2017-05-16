@@ -3,4 +3,4 @@
 
 
 
-[1]: https://blog.hafizjef.com/slides/soft-eng
+[1]: https://sudoes.github.io/slides/soft-eng
