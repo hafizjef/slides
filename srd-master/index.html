@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>UTeM E-Voting System</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<div>
+					<h3 style="padding-top:20px">UTEM E-VOTING SYSTEM</h3>
+					<h5 style="background-color: #1565C0; color: #111111">PLATINUM GROUP</h5>
+				</div>
+			</section>
+			<section data-background="#455A64" data-background-transition="zoom">
+				<h3>Organization Chart</h3>
+				<section>
+					<div>
+						<img src="img/org-chart.svg" style="background:none; border:none; box-shadow:none;" alt="charts">
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h4>Introduction</h4>
+					<p>An online voting system to cater the needs of voting solutions without requiring any <span class="fragment highlight-red">physical polling station</span></p>
+				</section>
+				<section>
+					<h3>Problem Statement</h3>
+					<section>
+						<ul style="padding-top: 50px">
+							<li class="fragment fade-right">Tedious</li>
+							<li class="fragment fade-right">Error prone</li>
+							<li class="fragment fade-right">Require lots of work</li>
+							<li class="fragment fade-right">Questionable security</li>
+							<li class="fragment fade-right" style="color: #BF360C">Queuing!</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section data-background="#BF360C" data-background-transition="zoom">
+				<h1>Why queue when you don't have to?</h1>
+			</section>
+			</section>
+			<section>
+				<h3>Objectives</h3>
+				<section>
+					<ul>
+						<li>Minimize voting friction</li>
+						<li>Introduce automation</li>
+						<ul>
+							<li>Save time</li>
+							<li>Reduce errors</li>
+							<li>Increase security & integrity</li>
+						</ul>
+						<li>Maximize usability</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h4>System scope</h4>
+				<p class="fragment fade-up" style="padding-top: 40px">Students</p>
+				<p class="fragment fade-up">Administrator</p>
+			</section>
+			<section>
+				<h3>High Level Cost</h3>
+				<section>
+					<table style="font-size: 32px">
+						<tr>
+							<th colspan="2" style="text-align: center; font-weight: bold; background-color: #263238">COST CATEGORIES</th>
+							<th style="text-align: center; font-weight: bold; background-color: #263238">FEES</th>
+						</tr>
+						<tr>
+							<td rowspan="3" style="vertical-align: middle">Software Cost</td>
+							<td>Application Software</td>
+							<td>RM20,000.00</td>
+						</tr>
+						<tr>
+							<td>Database Software</td>
+							<td>RM5,000.00</td>
+						</tr>
+						<tr>
+							<td>Additional 3rd party software</td>
+							<td>RM1,000.00</td>
+						</tr>
+						<tr>
+							<td>Hardware Cost</td>
+							<td>Application Server</td>
+							<td>RM20,000.00</td>
+						</tr>
+						<tr>
+							<td>Implementation Cost</td>
+							<td>Software Services</td>
+							<td>RM10,000.00</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:right; font-weight: bold; background-color: #263238">Total</td>
+							<td style="background-color:#263238">RM56,000.00</td>
+						</tr>
+					</table>
+				</section>
+			</section>
+			<section>
+				<h3>Software Development Model</h3>
+				<section>
+					<img src="img/rad.svg" style="background:none; border:none; box-shadow:none;" alt="rad">
+					<p>Rapid Application Development</p>
+				</section>
+			</section>
+			<section data-background="#455A64" data-background-transition="zoom">
+				<h3>System Decomposition Diagram</h3>
+				<section>
+					<img src="img/decomposition.svg" style="background:none; border:none; box-shadow:none;" alt="decomposition">
+				</section>
+			</section>
+			<section>
+				<h3>Non-functional Requirements</h3>
+				<section>
+					<p>Security</p>
+					<ul style="font-size: 32px">
+						<li>Secure Socket Layer</li>
+						<li>Data Encryption</li>
+						<li>Access Control List</li>
+					</ul>
+				</section>
+				<section>
+					<p>Performance</p>
+					<ul style="font-size: 32px">
+						<li>Content Delivery Network</li>
+						<li>In Memory Datastore</li>
+						<li>Load Balancers</li>
+					</ul>
+				</section>
+				<section>
+					<p>Recovery</p>
+					<ul style="font-size: 32px">
+						<li>Daily Offsite Backups</li>
+						<li>Database Sharding</li>
+					</ul>
+				</section>
+			</section>
+			<section data-background="#455A64" data-background-transition="zoom">
+				<h3>Architectural View</h3>
+				<section>
+					<img src="img/architectural-view.svg" style="background:none; border:none; box-shadow:none;" alt="rad">
+				</section>
+			</section>
+			<section data-background="#455A64">
+				<h3>Deployment View</h3>
+				<section>
+					<img src="img/deploy.svg" style="background:none; border:none; box-shadow:none;" alt="rad">
+				</section>
+			</section>
+			<section>
+				<h2>Q&A Session</h2>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+
+			controls: true,
+
+			multiplex: {
+				secret: '14950567814347809856', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+				id: '70c5c6403e111e18', // Obtained from socket.io server
+				url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+			},
+
+			dependencies: [
+				{ src: 'https://cdn.socket.io/socket.io-1.3.5.js', async: true },
+				{ src: 'plugin/multiplex/master.js', async: true },
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>
