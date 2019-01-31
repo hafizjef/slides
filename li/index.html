@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Devices World Sdn. Bhd.</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2 style="color: #fe7445">DEVICES WORLD</h2>
+					<hr/>
+					<p>
+						<small style="text-transform: uppercase; font-weight: bold">
+							Industrial Training Bachelor Degree of Computer Science (Software Development) - BITU 3946
+						</small>
+					</p>
+					<br><br>
+					<p>
+						<small style="text-transform:uppercase">
+							Student Name: Hafiz Naqiuddin Bin Jefri<br>
+							Faculty Supervisor: Dr. Sazalinsyah Razali<br>
+							Industry Supervisor: Muhammad Faiz<br>
+						</small>
+					</p>	
+				</section>
+				<section>
+					<h3 style="color: #fe7445">DEVICES WORLD SDN BHD</h3>
+					<section>
+							<img style="border: none; background: none" src="img/iscada.png">
+						<small>
+							<ul>
+								<li>Private sector company owned by 100% Malaysian owned Technology Company</li>
+								<li>Company’s flagship product is Internet-based Supervisory Control and Data Acquisition 
+									(iSCADA) which gives solution that utilizes the public Internet infrastructure as the data 
+									communication medium.</li>
+							</ul>
+						</small>
+					</section>
+					<section>
+						<img src="img/iheps.png">
+						<img src="img/items.png">
+						<br>
+						<img src="img/inest.png">
+						<img src="img/ipags.png">
+					</section>
+					<section>
+						<img style="border: none; background: none" src="img/architecture.png">
+					</section>
+					<section>
+							<img style="border: none; background: none" src="img/soft-arch.png">
+					</section>	
+				</section>
+				<section>
+					<h3>Language & Tooling</h3>
+					<section>
+							<div style="margin-top: 15px; font-size: 25px">
+								<ul>
+										<li>
+											Java
+											<ul>
+												<li>Spring</li>
+												<li>Hibernate ORM</li>
+											</ul>
+										</li>
+										<li>
+											JavaScript
+											<ul>
+												<li>Isomorphic SmartClient</li>
+												<li>jQuery</li>
+												<li>Highcharts</li>
+											</ul>
+										</li>
+										<li>Eclipse IDE</li>
+										<li>Maven</li>
+										<li>Ant</li>
+										<li>MySQL</li>
+									</ul>
+								</div>
+					</section>
+				</section>
+				<section>
+					<h2>Task Specification</h2>
+					<section>
+							<table style="font-size: 18px;">
+								<tr>
+									<th>&nbsp;</th>
+									<th>Task</th>
+									<th align="center">Problem statement</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>
+										Undefined behaviour of components
+									</td>
+									<td>
+										Components randomly updating producing undefined behaviour
+										between updates
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>
+										Fix HTML layout
+									</td>
+									<td>
+										Inner child of HTML element exceed the parent bounds
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+										<td>
+											Implement new module
+										</td>
+										<td>
+											Implement new control module (modbus)
+										</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>
+										Automation
+									</td>
+									<td>
+										Automating the creation of report in a portable document format
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Create external library</td>
+									<td>
+										Creation of external library that can be used by other application
+										to simplify development process
+									</td>
+								</tr>
+							</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Implementation & Solution Method</h2>
+					</section>
+					<section>
+						<h4>Undefined components behaviour</h4>
+						<br>
+						<section>
+							<img src="img/clock.png">
+							<p style="font-size: 20px">
+								Separate the component state to make sure the state are not mutated by
+								other component
+							</p>
+							<pre><code data-trim>
+									function ISCADATime(){
+										var prevSeconds = "0"; //Previously global
+										var time = " ";
+										var date = " ";
+										//snipped--
+									}
+							</code></pre>
+						</section>
+					</section>
+					<section>
+						<h4>Fix HTML Layout</h4>
+						<p>
+							<img style="border: none; width: 65%" src="img/layout.png">
+							<p style="font-size: 20px">
+								By utilizing change event handler provided by the DOM API
+								parent element can be notified about the changes of its children
+							</p>
+						</p>
+					</section>
+					<section>
+							<pre><code data-trim>
+								resized: function() {
+									try {
+										IWChCfgCopy.markForRedraw();
+									} catch (err) {
+										// Initial load; IWChCfgCopy are not defined yet
+									}	
+								},
+							</code></pre>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
