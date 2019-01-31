@@ -35,9 +35,9 @@
 					<br><br>
 					<p>
 						<small style="text-transform:uppercase">
-							Student Name: Hafiz Naqiuddin Bin Jefri<br>
+							Student Name: Hafiz Naqiuddin Jefri<br>
 							Faculty Supervisor: Dr. Sazalinsyah Razali<br>
-							Industry Supervisor: Muhammad Faiz<br>
+							Industry Supervisor: Muhammad Faiz Zakaria<br>
 						</small>
 					</p>	
 				</section>
@@ -47,10 +47,13 @@
 							<img style="border: none; background: none" src="img/iscada.png">
 						<small>
 							<ul>
-								<li>Private sector company owned by 100% Malaysian owned Technology Company</li>
-								<li>Company’s flagship product is Internet-based Supervisory Control and Data Acquisition 
-									(iSCADA) which gives solution that utilizes the public Internet infrastructure as the data 
-									communication medium.</li>
+								<li style="margin: 0 0 10px 0;">
+									Researching, developing, and deploying high-quality monitoring and management of devices
+									across all industries
+								</li>
+								<li li style="margin: 0 0 10px 0;">More than 15 years experience in end-to-end IoT solutions</li>
+								<li li style="margin: 0 0 10px 0;">All core hardware, software, and firmware are 100% designed in Malaysia</li>
+								<li li style="margin: 0 0 10px 0;">Flagship product: iSCADA</li>
 							</ul>
 						</small>
 					</section>
@@ -71,29 +74,29 @@
 				<section>
 					<h3>Language & Tooling</h3>
 					<section>
-							<div style="margin-top: 15px; font-size: 25px">
-								<ul>
-										<li>
-											Java
-											<ul>
-												<li>Spring</li>
-												<li>Hibernate ORM</li>
-											</ul>
-										</li>
-										<li>
-											JavaScript
-											<ul>
-												<li>Isomorphic SmartClient</li>
-												<li>jQuery</li>
-												<li>Highcharts</li>
-											</ul>
-										</li>
-										<li>Eclipse IDE</li>
-										<li>Maven</li>
-										<li>Ant</li>
-										<li>MySQL</li>
+							<small>
+							<ul>
+								<li>
+									Java
+									<ul>
+										<li>Spring</li>
+										<li>Hibernate ORM</li>
 									</ul>
-								</div>
+								</li>
+								<li>
+									JavaScript
+									<ul>
+										<li>Isomorphic SmartClient</li>
+										<li>jQuery</li>
+										<li>Highcharts</li>
+									</ul>
+								</li>
+								<li>Eclipse IDE</li>
+								<li>Maven</li>
+								<li>Ant</li>
+								<li>MySQL</li>
+							</ul>
+							</small>
 					</section>
 				</section>
 				<section>
@@ -180,6 +183,7 @@
 						<h4>Fix HTML Layout</h4>
 						<p>
 							<img style="border: none; width: 65%" src="img/layout.png">
+							<br>
 							<p style="font-size: 20px">
 								By utilizing change event handler provided by the DOM API
 								parent element can be notified about the changes of its children
@@ -187,15 +191,49 @@
 						</p>
 					</section>
 					<section>
-							<pre><code data-trim>
-								resized: function() {
-									try {
-										IWChCfgCopy.markForRedraw();
-									} catch (err) {
-										// Initial load; IWChCfgCopy are not defined yet
-									}	
-								},
-							</code></pre>
+						<pre><code data-trim>
+							resized: function() {
+								try {
+									IWChCfgCopy.markForRedraw();
+								} catch (err) {
+									// Initial load; IWChCfgCopy are not defined yet
+								}	
+							},
+						</code></pre>
+						<p style="font-size: 20px; text-align: left">
+							This function will be called when the inner element size are changed, to fix the bug
+							we can mark the parent element to redraw itself accordingly
+						</p>
+					</section>
+					<section>
+						<h4>Creating new module</h4>
+						<section>
+							<img src="img/control.png" style="width: 65%">
+							<p style="font-size: 20px">
+								Creating new modules for iSCADA to support new type of control (modbus protocol)
+							</p>
+						</section>
+					</section>
+					<section>
+							<h4>Create external library</h4>
+							<br>
+							<img src="img/server.png" style="border: none; background: none">
+							<img src="img/arrow.png" style="border: none; background: none; margin-left: 20px; margin-right: 20px">
+							<img src="img/dll.png" style="border: none; background: none">
+							<img src="img/arrow.png" style="border: none; background: none; margin-left: 20px; margin-right: 20px">
+							<img src="img/winapp.png" style="border: none; background: none">
+							<p style="font-size: 20px">
+								Creating external library for a .NET Windows Form Application
+								This application are used for our new Identity Management System
+							</p>
+					</section>
+					<section>
+						<h3>Conclusion</h3>
+						<ul style="font-size: 24px; margin-top: 45px">
+							<li>Technical Skills</li>
+							<li>Teamwork</li>
+							<li>Real Working Environment</li>
+						</ul>
 					</section>
 				</section>
 			</div>
